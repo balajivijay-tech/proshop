@@ -19,9 +19,10 @@ const Product = ({ product }) => {
           <Rating
             value={product.rating}
             text={`${product.numReviews} reviews`}
+            color={`#FFBB00`}
           />
         </Card.Text>
-        <Card.Text as='h3'>${product.price}</Card.Text>
+        <Card.Text className='py-3' as='h3'>${product.price}</Card.Text>
       </Card.Body>
     </Card>
   )
